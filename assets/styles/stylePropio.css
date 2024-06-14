@@ -30,7 +30,7 @@ header {
 
 header div {
   background-image: url(/assets/images/hockey-5.jpg);
-  background-position: 70% 30;
+  background-position: 70% 30%;
   position: absolute;
   object-fit: contain;
   height: 300px;
