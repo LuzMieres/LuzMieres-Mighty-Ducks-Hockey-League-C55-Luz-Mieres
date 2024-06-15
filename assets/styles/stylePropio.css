@@ -6,10 +6,15 @@
 }
 
 body {
+  max-height: 100vh;
+  overflow-y: hidden;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-  background-position:center;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(
       to bottom,
       rgba(252, 252, 249, 0.294),
@@ -18,113 +23,108 @@ body {
     url("/assets/images/hockey-6.jpg");
 }
 
-main {
-  min-height: 100vh;
-}
-
 header {
-  height: 400px;
-  width: 100%;
-  margin-top: 30px;
+  border-radius: 10px;
+  height: 200px;
+  width: 80%;
+  margin-top: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 0 rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
 }
 
 header div {
   background-image: url(/assets/images/hockey-5.jpg);
   background-position: 70% 30%;
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px;
   object-fit: contain;
-  height: 300px;
-  width: 80%;
-  margin-left: 10%;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 1px rgb(0, 0, 0),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.logo1 {
-  position: relative;
-  top: 200px;
-  left: 15%;
+.titlePrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
   width: 120px;
   height: 120px;
   object-fit: cover;
+  border-radius: 10px;
   border: 1px solid black;
-  box-shadow: inset 0 -3em 3em rgb(0, 0, 0), 0 0 0 1px rgb(0, 0, 0),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.719), 0 0 0 1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.616);
 }
 
 h1 {
-  margin-top: 150px;
-  margin-left: 30%;
   text-shadow: 2px 2px 3px black, 0 0 2em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
   color: white;
+  font-size: 40px;
 }
 
 h2 {
-  position: relative;
-  top: 300px;
   text-align: center;
   background-color: black;
   font-size: 30px;
-  width: 80%;
+  width: 100%;
   height: 40px;
-  margin-left: 10%;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 1px rgb(0, 0, 0),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
-  text-shadow: 1px 1px 2px black, 0 0 1em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
   color: white;
-}
-
-.sectionPrincipal {
-  width: 80%;
-  margin-left: 10%;
-  position: relative;
-}
-
-.sectionLogoInfo {
-  display: inline-block;
-  position: absolute;
-  top: 25px;
-  margin-left: 10%;
-  font-size: 20px;
-  width: 75.5%;
-  height: 400px;
-}
-
-.section1 {
-  background-color: rgba(255, 255, 255, 0.39);
-  margin: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 h3 {
   margin-bottom: 5px;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+p {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  width: 80%;
+  height: 90vh;
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: 17%;
+  gap: 10px;
 }
 
-.navIndex {
-  position: relative;
-  top: 50px;
-}
-
-.navAbout {
-  position: relative;
-  bottom: 340px;
-}
-
-nav a:hover {
+.anchor:hover {
   background-color: rgb(39, 39, 54);
 }
 
-nav a {
-  display: block;
+.anchorActive {
+  background-color: rgb(39, 39, 54);
   border: 1px solid black;
-  margin-bottom: 20px;
-  width: 180px;
-  height: 50px;
+  height: 40px;
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-size: 25px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+}
+
+.anchor {
+  border: 1px solid black;
+  height: 40px;
   text-align: center;
   padding-top: 5px;
   text-decoration: none;
@@ -136,47 +136,123 @@ nav a {
     0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
 }
 
-.sectionContact {
-  position: relative;
-  bottom: 20px;
+.anchorContact {
+  color: rgb(0, 0, 255);
+  text-decoration: none;
 }
 
-p {
-  font-size: 25px;
-  font-weight: lighter;
+.anchorContact:hover {
+  text-decoration: underline;
+}
+
+.sectionPrincipal {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.sectionLogoInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  width: 40%;
+  height: 270px;
+  flex-grow: 2;
+}
+
+.sectionImagesInfo {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+.sectionImagesOfTheSite1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.sectionLogoInfoAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+  width: 40%;
+  flex-grow: 2;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.sectionImagesOfTheSite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 25%;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.sectionImagesOfTheSite a {
+  width: 130px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+.sectionAbout {
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 .image {
-  width: 200px;
-  height: 200px;
-  margin-left: 12.5%;
-  margin-top: 200px;
-  display: inline-block;
-  margin-bottom: 50px;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 0px rgb(0, 0, 0),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  display: flex;
+  justify-content: space-between;
+  width: 100%x;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .image img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 230px;
   object-fit: cover;
-}
-
-.image:hover {
-  transform: scale(2, 2);
-  transition-duration: 1s;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
 }
 
 footer {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   font-size: 30px;
   width: 80%;
   height: 40px;
-  margin-left: 10%;
-  margin-top: 150px;
-  padding-top: 5px;
+  border-radius: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 1px rgb(0, 0, 0),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
   text-shadow: 1px 1px 2px black, 0 0 1em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
