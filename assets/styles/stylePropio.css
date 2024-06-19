@@ -82,9 +82,13 @@ h3 {
   font-size: 25px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
 p {
-  font-size: 25px;
-  font-weight: bolder;
+  font-size: 20px;
+  font-weight:lighter;
 }
 
 main {
@@ -103,28 +107,35 @@ nav {
   gap: 10px;
 }
 
+nav a:hover {
+  background-color: rgb(39, 39, 54);
+}
+
 .anchor:hover {
   background-color: rgb(39, 39, 54);
 }
 
-.anchorActive {
+.active {
   background-color: rgb(39, 39, 54);
+}
+
+.anchor {
   border: 1px solid black;
-  height: 40px;
+  height: 65px;
   text-align: center;
   padding-top: 5px;
   text-decoration: none;
   border-radius: 10px;
   color: white;
-  transition: background-color 0.3s ease;
+  background-color: rgba(0, 38, 255, 0.794);
   font-size: 25px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 1px rgb(0, 0, 0),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
 }
 
-.anchor {
+nav a {
   border: 1px solid black;
-  height: 40px;
+  height: 65px;
   text-align: center;
   padding-top: 5px;
   text-decoration: none;
@@ -149,6 +160,7 @@ nav {
   width: 100%;
   height: 290px;
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   margin-top: 20px;
 }
@@ -219,7 +231,7 @@ section {
 }
 
 .sectionAbout {
-  background-color: rgba(255, 255, 255, 0.678);
+  background-color: rgb(255, 255, 255);
   width: 90%;
   border-radius: 10px;
   padding: 5px;
@@ -241,6 +253,127 @@ section {
   border-radius: 10px;
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+table, tr, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+table{
+  width: 400px;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+caption {
+  font-size: 18px;
+}
+
+.olLetras {
+  list-style: lower-alpha;
+}
+
+.ulPunto {
+  list-style: circle;
+}
+
+.sectionDivsRules {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 35%;
+  flex-grow: 2;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 10px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+
+}
+
+.sectionRules{
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 90%;
+  padding: 10px 10px 0 10px ;
+}
+
+.divList {
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 90%;
+  padding: 0 30px;
+}
+
+.divList1 {
+  background-color: rgba(255, 255, 255, 0.678);
+  width: 90%;
+  padding: 0 30px 10px 30px;
+}
+
+.h3List{
+  margin-top: 15px;
+}
+
+.liOlsecond {
+  margin-top: 10px;
+}
+
+.sectionInfoGames {
+  background-color: rgba(255, 255, 255, 0.678);
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  height: 270px;
+  padding: 10px;
+}
+
+.sectionGames {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+.sectionGamesContact {
+  background-color: rgba(255, 255, 255, 0.678);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  padding-right: 30px;
+
+}
+
+.phoneEmail{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.phone {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.email{
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.phone:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+.email:hover{
+  text-decoration: underline;
+  color: blue;
 }
 
 footer {

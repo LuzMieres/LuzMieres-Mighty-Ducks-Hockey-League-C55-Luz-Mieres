@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Neue", cursive;
+  }
+  
+  body {
+    max-height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    border-radius: 10px;
+    height: 200px;
+    width: 80%;
+    margin-top: 10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 0 rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  }
+  
+  header div {
+    background-image: url(/assets/images/hockey-5.jpg);
+    background-position: 70% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .titlePrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.719), 0 0 0 1px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.616);
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 3px black, 0 0 2em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
+    color: white;
+    font-size: 40px;
+  }
+  
+  h2 {
+    text-align: center;
+    background-color: rgb(64, 107, 75);
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  
+  h5 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight:lighter;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 80%;
+    height: 90vh;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    gap: 10px;
+  }
+  
+  nav a:hover {
+    background-color: rgb(39, 39, 54);
+  }
+  
+  .anchor:hover {
+    background-color: rgb(39, 39, 54);
+  }
+  
+  .active {
+    background-color: rgb(39, 39, 54);
+  }
+  
+  .anchor {
+    border: 1px solid black;
+    height: 65px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(64, 107, 75);
+    font-size: 25px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 1px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  }
+  
+  nav a {
+    border: 1px solid black;
+    height: 65px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    background-color:   rgb(64, 107, 75);
+    font-size: 25px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 1px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  }
+  
+  .anchorContact {
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+  }
+  
+  .anchorContact:hover {
+    text-decoration: underline;
+  }
+  
+  .sectionPrincipal {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .sectionLogoInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    width: 40%;
+    height: 270px;
+    flex-grow: 2;
+  }
+  
+  .sectionImagesInfo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color:  rgba(224, 202, 79, 0.87);
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+  }
+  
+  .sectionImagesOfTheSite1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .sectionLogoInfoAbout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    width: 40%;
+    flex-grow: 2;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .sectionImagesOfTheSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color:  rgba(224, 202, 79, 0.87);
+    width: 25%;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  .sectionImagesOfTheSite a {
+    width: 130px;
+  }
+  
+  section {
+    background-color: rgba(224, 202, 79, 0.87);
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 0px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+  }
+
+  article {
+    background-color: rgba(224, 202, 79, 0.87);
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 0px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+  }
+  
+  .sectionAbout {
+    background-color:  rgba(224, 202, 79, 0.87);
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .image img {
+    height: 250px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+  }
+  
+  table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  table{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5px;
+  }
+  
+  caption {
+    font-size: 18px;
+  }
+  
+  .olLetras {
+    list-style: lower-alpha;
+  }
+  
+  .ulPunto {
+    list-style: circle;
+  }
+  
+  .sectionDivsRules {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 35%;
+    flex-grow: 2;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .sectionRules{
+    background-color: rgba(224, 202, 79, 0.87);
+    width: 90%;
+    padding: 10px 10px 0 10px ;
+  }
+  
+  .divList {
+    background-color:  rgba(224, 202, 79, 0.87);
+    width: 90%;
+    padding: 0 30px;
+  }
+  
+  .divList1 {
+    background-color: rgba(224, 202, 79, 0.87);
+    width: 90%;
+    padding: 0 30px 10px 30px;
+  }
+  
+  .h3List{
+    margin-top: 15px;
+  }
+  
+  .liOlsecond {
+    margin-top: 10px;
+  }
+  
+  .sectionInfoGames {
+    background-color: rgba(224, 202, 79, 0.87);
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    height: 270px;
+    padding: 10px;
+  }
+
+  .sectionGames {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    background-color:  rgba(224, 202, 79, 0.87);
+  }
+
+  .sectionGamesContact {
+    background-color: rgba(224, 202, 79, 0.87);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 30px;
+
+  }
+
+  .phoneEmail{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .phone {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .email{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .phone:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .email:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+
+  footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(64, 107, 75);
+    font-size: 30px;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 1px rgb(0, 0, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
+    color: white;
+  }
