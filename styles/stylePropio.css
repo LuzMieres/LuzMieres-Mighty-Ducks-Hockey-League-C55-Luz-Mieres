@@ -141,7 +141,6 @@ nav a.active {
 
 .sectionPrincipal {
   width: 100%;
-  max-width: 1200px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -153,7 +152,6 @@ nav a.active {
 .sectionLogoInfo,
 .sectionLogoInfoAbout {
   width: 100%;
-  max-width: 500px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -165,7 +163,6 @@ nav a.active {
 .sectionImagesOfTheSite1,
 .sectionImagesOfTheSite {
   width: 100%;
-  max-width: 1000px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -196,7 +193,6 @@ section,
 .sectionGames,
 .sectionGamesContact {
   width: 100%;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,7 +265,6 @@ caption {
 .sectionDivsRules,
 .sectionInfoGames {
   width: 100%;
-  max-width: 900px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -335,8 +330,8 @@ button {
 
 .maps {
   width: 100%;
-  max-width: 1200px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
