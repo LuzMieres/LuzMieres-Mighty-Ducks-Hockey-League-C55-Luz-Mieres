@@ -1,0 +1,410 @@
+/* Resetear márgenes, padding y box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(252, 252, 249, 0.294),
+      rgba(173, 173, 187, 0.411)
+    ),
+    url("/assets/images/hockey-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Estilo para el encabezado */
+header {
+  width: 80%;
+  max-width: 1200px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 0 rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+}
+
+header div {
+  height: 150px;
+  width: 100%;
+  background-image: url(/assets/images/hockey-5.jpg);
+  background-position: 70% 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.titlePrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.719), 0 0 0 1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.616);
+}
+
+h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 3px black, 0 0 2em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+h5,
+h6 {
+  font-size: 20px;
+  text-align: center;
+  width: 70%;
+}
+
+p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 7px;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 30%;
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 38, 255, 0.794);
+  font-size: 25px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.356), 0 0 0 1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+}
+
+nav a:hover,
+nav a.active {
+  background-color: rgb(39, 39, 54);
+}
+
+.sectionPrincipal {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.sectionLogoInfo,
+.sectionLogoInfoAbout {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.sectionImagesInfo,
+.sectionImagesOfTheSite1,
+.sectionImagesOfTheSite {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.678);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+.sectionImagesOfTheSite1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sectionImagesOfTheSite a {
+  width: 130px;
+}
+
+section,
+.sectionAbout,
+.sectionRules,
+.divList,
+.divList1,
+.sectionGames,
+.sectionGamesContact {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.678);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.472), 0 0 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.993);
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(0, 38, 255);
+}
+
+tr:nth-child(even){
+    background-color: rgb(39, 39, 54);
+}
+
+th{
+    background-color: rgb(39, 39, 54);
+}
+
+caption {
+  font-size: 20px;
+  color: black;
+}
+
+.olLetras,
+.ulPunto {
+  list-style: lower-alpha;
+  list-style: circle;
+}
+
+.sectionDivsRules,
+.sectionInfoGames {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 10px;
+  border-radius: 10px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+.formDivsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+fieldset{
+    width: 100%;
+}
+
+.divsLabelsInputs{
+    width: 80%;
+}
+
+.inputAdress{
+    width: 70%;
+}
+
+.inputCity{
+    width: 60%;
+}
+
+.inputZipCode{
+    width: 60%;
+}
+
+button {
+  width: 60%;
+  max-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 32px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  background-color: rgb(0, 38, 255);
+}
+
+.button:hover {
+  background-color: rgb(39, 39, 54);
+}
+
+.maps {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.maps article {
+  width: 100%;
+  max-width: 350px;
+  height: 380px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+}
+
+footer {
+  width: 80%;
+  max-width: 1200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 1px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.548);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(3, 3, 3), 0 0 0.2em rgb(0, 0, 0);
+  color: white;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  header {
+    width: 80%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 50%;
+  }
+
+  main {
+    width: 80%;
+    align-items: center;
+  }
+
+  .sectionPrincipal,
+  .sectionLogoInfo,
+  .sectionLogoInfoAbout,
+  .sectionImagesInfo,
+  .sectionImagesOfTheSite1,
+  .sectionImagesOfTheSite,
+  section,
+  .sectionAbout,
+  .sectionRules,
+  .divList,
+  .divList1,
+  .sectionGames,
+  .sectionGamesContact,
+  .maps {
+    width: 100%;
+  }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Welcome to Mighty Ducks Hockey League - your ultimate destination for all things hockey! Explore our comprehensive coverage of thrilling matches, player stats, team updates, and exclusive insights into the dynamic world of ice hockey. Stay connected with the latest scores, news, and highlights. Join us in celebrating the passion and excitement of the game, where every moment is a chance for greatness. Let's embrace the thrill of the ice together!" />
+    <meta name="keywords" content="Hockey, games, schedules" />
+    <meta name="author" content="Luz Mieres" />
+    <link rel="shortcut icon" href="/assets/images/Logo-Mighty-ducks-01.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/stylePropio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <title>Mighty Ducks Hockey League</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="/assets/images/Logo-Mighty-ducks-01.png" alt="logo of Mighty Ducks Hockey League" />
+            <div class="titlePrincipal">
+                <h1>Mighty Ducks Hockey League</h1>
+            </div>
+        </div>
+        <h2>Upcoming Events</h2>
+    </header>
+    <main>
+        <div class="sectionPrincipal">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="/pages/about.html">About MDHL</a>
+                <a href="/pages/contact.html">Contact</a>
+                <a href="/pages/gameInformation.html">Game Information</a>
+                <a href="/pages/rules.html">Rules & Policies Page</a>
+                <a class="active" href="#">Registration Form</a>
+            </nav>
+            <div class="sectionInfoGames">
+                <div class="sectionGames">
+                    <section>
+                        <h3>Registration Form</h3>
+                        <form action="../show_data.html">
+                            <fieldset>
+                                <div class="formDivsRow">
+                                    <div class="divCityYZipCode">
+                                        <label>Player´s Firs Name:
+                                            <input class="inputFirstName" type="text" name="First-Name"
+                                                placeholder="Ej: Juan">
+                                        </label>
+                                    </div>
+                                    <div class="divCityYZipCode">
+                                        <label class="labelLastName">Last Name:
+                                            <input class="inputLastName" type="text" name="Last-Name"
+                                                placeholder="Ej: Pérez">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <label>Street Adress:
+                                        <input class="inputAdress" type="text" name="Street-Adress"
+                                            placeholder="Ej: Godoy Cruz 2746">
+                                    </label>
+                                </div>
+                                <div class="formDivsRow">
+                                    <div class="divCityYZipCode">
+                                        <label">City:
+                                            <input class="inputCity" type="text" name="City" placeholder="Ej: Palermo">
+                                            </label>
+                                    </div>
+                                    <div class="divCityYZipCode">
+                                        <label class="labelLastName">Zip Code:
+                                            <input class="inputZipCode" type="text" name="Zip-Code"
+                                                placeholder="Ej: 1425">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="formDivsRow">
+                                    <label>Birth Date (mm/dd/yyyy):
+                                        <input type="date" name="Birth-Date">
+                                    </label>
+                                    <div>
+                                        <label class="labelGenre">Genre: Female
+                                            <input type="radio" name="Genre" value="Female">
+                                        </label>
+                                        <label>Male
+                                            <input type="radio" name="Genre" value="Male">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <label>Grade: Pre-School
+                                        <input type="radio" name="Grade" value="Pre-School">
+                                    </label>
+                                    <label>1st
+                                        <input type="radio" name="Grade" value="1st">
+                                    </label>
+                                    <label>2nd
+                                        <input type="radio" name="Grade" value="2nd">
+                                    </label>
+                                    <label>3rd
+                                        <input type="radio" name="Grade" value="3rd">
+                                    </label>
+                                    <label>4th
+                                        <input type="radio" name="Grade" value="4th">
+                                    </label>
+                                    <label>5th
+                                        <input type="radio" name="Grade" value="5th">
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldsetCheckbox">
+                                <p>Which elementary school do yo live near?</p>
+                                <p>Closest School:</p>
+                                <div class="divsLabelsInputs">
+                                    <input type="checkbox" name="Closest-School" value="AJ Katzenmaier"
+                                        id="katzenmaier">
+                                    <label for="katzenmaier">AJ Katzenmaier </label>
+
+                                    <input class="inputMarjorie" type="checkbox" name="Closest-School"
+                                        value="Marjorie P Hart" id="marjorie">
+                                    <label for="marjorie">Marjorie P Hart</label>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <input type="checkbox" name="Closest-School" value="Greenbay" id="greenbay">
+                                    <label for="greenbay">Greenbay</label>
+
+                                    <input class="inputNorth" type="checkbox" name="Closest-School"
+                                        value="North Elementary" id="north">
+                                    <label for="north">North Elementary</label>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <input type="checkbox" name="Closest-School" value=" Howard A Yeager" id="howard">
+                                    <label for="howard">Howard A Yeager</label>
+
+                                    <input class="inputSouth" type="checkbox" name="Closest-School"
+                                        value="South Elementary" id="south">
+                                    <label for="south">South Elementary</label>
+
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldsetCheckbox">
+                                <div class="divsLabelsInputs">
+                                    <p>What position(s) do yo normally play? (check all that apply)</p>
+                                    <input type="checkbox" name="Position" value="Fordward" id="fordward">
+                                    <label for="fordward">Fordward</label>
+
+                                    <input class="inputMidfield" type="checkbox" name="Position" value="Midfield"
+                                        id="midfield">
+                                    <label for="midfield">Midfield</label>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <input type="checkbox" name="Position" value="Defense" id="defense">
+                                    <label for="defense">Defense</label>
+
+                                    <input class="inputGoalkeeper" type="checkbox" name="Position" value="Goalkeeper"
+                                        id="goalkeeper">
+                                    <label for="goalkeeper">Goalkeeper</label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldsetCheckbox">
+                                <div class="divsLabelsInputs">
+                                    <p>Uniform Zise:</p>
+                                    <input type="radio" name="Zise" value="Youth Smal" id="youth-smal">
+                                    <label for="youth-smal">Youth Smal</label>
+
+                                    <input class="inputMedium" type="radio" name="Zise" value="Medium" id="medium">
+                                    <label for="medium">Medium</label>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <input type="radio" name="Zise" value="Youth Medium" id="youth-medium">
+                                    <label for="youth-medium">Youth Medium</label>
+
+                                    <input class="inputLarge" type="radio" name="Zise" value="Large" id="large">
+                                    <label for="large">Large </label>
+
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <input type="radio" name="Zise" value="Youth Large" id="youth-large">
+                                    <label for="youth-large">Youth Large</label>
+
+                                    <input class="inputExtralarge" type="radio" name="Zise" value="Extra-Large"
+                                        id="extra-large">
+                                    <label for="extra-large">Extra-Large</label>
+
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <input type="radio" name="Zise" value="Small" id="small">
+                                    <label for="small">Small</label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div>
+                                    <p>Permission to Play</p>
+                                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and
+                                        I will abide by
+                                        all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the
+                                        possibility of
+                                        physical injury associated with hockey and in considration for the "League"
+                                        accepting the
+                                        registrant for its hockey programs and activities, I hereby release, discharge,
+                                        and/or otherwise
+                                        indemnify MDHL, their employees and associated personel and volunteers,
+                                        including the facilities
+                                        used for practices and games, against any claim by or on behalf of the
+                                        registrant´s
+                                        participation in the programand/orbeing transported to or from MDHL sponsored
+                                        activities, wich
+                                        transportation.
+                                        By entering your name below, I herebyagree andauthorizethe above. In addition,
+                                        by signing below,
+                                        lalso
+                                        acknowledge that I have read the cancellation policy and agree to its terms.
+                                    </p>
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <label for="signature">Parent/ Guardian/ Signature:</label>
+                                    <input type="text" name="Signature" id="signature">
+                                </div>
+                                <div class="divsLabelsInputs">
+                                    <label for="date">Date:</label>
+                                    <input type="text" name="Date" id="date">
+                                </div>
+
+                                <button>Enviar</button>
+
+                            </fieldset>
+                        </form>
+
+                    </section>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>© Copyright - Luz Mieres - Cohort55 MH</p>
+    </footer>
+</body>
+
+</html>
